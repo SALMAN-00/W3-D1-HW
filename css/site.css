@@ -1,0 +1,25 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 0px;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+
+.overlay1 {
+    background: rgba(105, 71, 164, 0.7);
+}
+
+.overlay2 {
+    background: linear-gradient(180deg, rgba(105, 71, 164, 0.39) 0%, rgba(23, 23, 23, 0.39) 100%);
+}
+
+.overlay3 {
+    background: linear-gradient(135.52deg, rgba(0, 255, 176, 0.71) 24.77%, rgba(215, 93, 255, 0.71) 67.54%, rgba(113, 150, 255, 0.71) 113.23%, rgba(217, 217, 217, 0) 137.24%);
+}

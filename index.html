@@ -1,0 +1,799 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta property="og:title" content="أكاديمية طويق">
+    <meta property="og:description" content="معسكرات وبرامج احترافية في أبرز مجالات التقنيات المتقدمة">
+    <meta property="og:type" content="Academy">
+    <meta property="og:url" content="https://tuwaiq.edu.sa">
+    <meta property="og:image" content="images/logo.png">
+    <meta name="application-name" content="أكاديمية طويق">
+    <meta name="apple-mobile-web-app-title" content="أكاديمية طويق">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="whites">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/toastify.css" nonce="">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-ipad-retina-152x152.png">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/logo_1.svg">
+    <title>أكاديمية طويق</title>
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css" nonce="">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" nonce="">
+
+    <link rel="stylesheet" href="css/flickity.min.css" nonce="">
+
+    <link href="css/jquery-confirm.min.css" rel="stylesheet" nonce="">
+    <link href="css/select2.min.css" rel="stylesheet" nonce="">
+    <link href="css/flatpickr.min.css" rel="stylesheet" nonce="">
+    <link href="css/airbnb.css" rel="stylesheet" nonce="">
+    <link href="css/animate.min.css" rel="stylesheet" nonce="">
+    <script src="js/alpinejs.component.min.js" defer="" nonce=""></script>
+    <script src="js/alpinejs.mask.min.js" defer="" nonce=""></script>
+    <script src="js/index.js" nonce=""></script>
+    <script src="js/alpinejs.min.js" defer="" nonce=""></script>
+    <link rel="stylesheet" href="css/site.css" nonce="">
+    <link rel="stylesheet" href="css/tailwind.css" nonce="">
+    <script src="js/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TG459DS4WK" nonce=""></script>
+    <script nonce="">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TG459DS4WK');
+    </script>
+    
+    <script nonce="">
+        window.LandingPageSettings={
+            portal:'https://portal.tuwaiq.edu.sa'
+        };
+    </script>
+    
+</head>
+
+<body class="relative m-0 font-sans text-base antialiased font-normal leading-default overscroll-none" x-data="mainMasterData" x-cloak="">
+<main class="relative transition-all duration-200 ease-in-out xl:mr-68 rounded-xl">
+
+    <div class="relative flex flex-col">
+        <nav class="fixed top-0 w-screen bg-transparent z-[9999] md:hidden " :class="{'bg-white shadow-lg drop-shadow-2xl ':fixed || open}" x-on:click.away="open=false" x-on:scroll.window="fixed = window.pageYOffset>30?true:false">
+    <div :class="activeUrl=='/bootcamps' &amp;&amp; 'bg-white' " class="px-4 pb-5 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <!-- Logo on the left -->
+            <a href="/" class="flex items-center flex-shrink-0">
+                <img class="h-12 " x-show="!fixed &amp;&amp; isHome &amp;&amp; !open" src="images/logo.svg" alt="Tuwaiq Academy">
+                <img class="h-14 " x-show="fixed || !isHome || open" src="images/logo_navbar.svg" alt="Tuwaiq Academy">
+            </a>
+            <!-- Menu on the right -->
+            <div class="flex items-center">
+                <button type="button" class="border border-[#B4B4B4] rounded p-3 shadow" x-on:click="open=!open" aria-label="Close">
+                    <img :class="{'text-primary-500': fixed,'text-white':!fixed &amp;&amp; isHome &amp;&amp; !open }" x-show="fixed || open || !isHome" alt="" src="images/menu.svg">
+                    <img :class="{'text-primary-500': fixed,'text-white':!fixed &amp;&amp; isHome &amp;&amp; !open }" x-show="!fixed &amp;&amp; isHome &amp;&amp; !open" alt="" src="images/menu2.svg">
+                </button>
+            </div>
+        </div>
+        <div x-show="open" x-transition:enter="transition duration-400" x-transition:enter-start="opacity-0 transform scale-y-0 -translate-y-1/2" x-transition:enter-end="opacity-100 transform scale-y-100 translate-y-0" x-transition:leave="transition ease-in-out duration-50" x-transition:leave-start="opacity-100 transform scale-y-100 translate-y-0" x-transition:leave-end="opacity-0 transform scale-y-0 -translate-y-1/2" class="w-full">
+            <div class="w-full bg-white ">
+                <div class="w-full">
+                    <div class="flex flex-col items-center justify-center gap-10 ">
+                        <div class="flex flex-col justify-center items-right w-full text-[1.2rem] text-[#98A2B3]">
+                            <a href="/" x-on:click="open=false" :class="{'text-primary-500 bg-[#F5F6FA]':activeUrl==='/home'}">
+                                <div class="flex flex-row justify-start items-center gap-6 mr-8 py-3 hover:bg-[#F5F6FA]">
+                                    <svg class="w-6 h-6" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.69115 0.456906C8.36055 0.162579 7.93338 0 7.49087 0C7.04837 0 6.6212 0.162579 6.2906 0.456906L0.24424 5.85314C0.0508118 6.02399 -0.0368776 6.28508 0.0144124 6.53805C0.0657025 6.79102 0.248 6.99736 0.492718 7.07948C0.737436 7.1616 1.00727 7.10685 1.2007 6.936L1.97682 6.25019V11.5562C1.97682 11.9391 2.12889 12.3064 2.39977 12.5771C2.67051 12.8478 3.03782 13 3.42076 13H6.05596C6.24743 13 6.43108 12.9239 6.56645 12.7885C6.70182 12.6532 6.77793 12.4696 6.77793 12.2781V8.84905H8.22187V12.2781C8.22187 12.4696 8.29798 12.6532 8.43335 12.7885C8.56872 12.9239 8.75237 13 8.94384 13H11.579C11.962 13 12.3293 12.8479 12.6 12.5771C12.8708 12.3064 13.023 11.9391 13.023 11.5562V6.25019L13.7991 6.936C13.9427 7.06278 14.1308 7.12745 14.3221 7.11557C14.5132 7.10369 14.6921 7.01646 14.8189 6.87283C14.9457 6.7292 15.0104 6.54121 14.9985 6.3499C14.9866 6.1586 14.8993 5.97993 14.7556 5.85314L8.69115 0.456906ZM11.579 11.5562H9.66581V8.84905C9.66581 8.46614 9.51375 8.09887 9.24286 7.82815C8.97212 7.55744 8.60481 7.40524 8.22187 7.40524H6.77793C6.39498 7.40524 6.02768 7.55729 5.75694 7.82815C5.4862 8.09902 5.33399 8.46614 5.33399 8.84905V11.5562H3.42076V4.95076L7.26526 1.53976C7.33189 1.47885 7.41883 1.44516 7.50892 1.44516C7.59902 1.44516 7.68596 1.479 7.75259 1.53976L11.579 4.95076V11.5562Z" :fill="activeUrl === '/home' ? '#4E3797' : '#98A2B3' "></path>
+                                    </svg>
+                                    <span>الرئيسية</span>
+                                </div>
+                            </a>
+                            <a x-on:click="open=false" :class="{'text-primary-500 bg-[#F5F6FA]':activeUrl==='/bootcamps'}" href="/bootcamps">
+                                <div class="flex flex-row justify-start items-center gap-6 mr-8 py-3 hover:bg-[#F5F6FA]">
+                                    <svg class="w-6 h-6" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 6.09375C6.5 6.54249 6.16422 6.90625 5.75 6.90625C5.33578 6.90625 5 6.54249 5 6.09375C5 5.64501 5.33578 5.28125 5.75 5.28125C6.16422 5.28125 6.5 5.64501 6.5 6.09375Z" :fill="activeUrl === '/bootcamps' ? '#4E3797' : '#98A2B3' "></path>
+                                        <path d="M10.125 0H1.875C1.37781 0 0.900781 0.214128 0.549219 0.594987C0.1975 0.975846 0 1.49246 0 2.03125V7.71875C0 8.25737 0.197656 8.77415 0.549219 9.15501C0.900781 9.53587 1.37781 9.75 1.875 9.75H3.75V11.375H2.8125C2.54453 11.375 2.29688 11.5299 2.16297 11.7812C2.02906 12.0326 2.02906 12.3424 2.16297 12.5938C2.29688 12.8451 2.54453 13 2.8125 13H9.1875C9.45547 13 9.70312 12.8451 9.83703 12.5938C9.97094 12.3424 9.97094 12.0326 9.83703 11.7812C9.70312 11.5299 9.45547 11.375 9.1875 11.375H8.25V9.75H10.125C10.6222 9.75 11.0992 9.53587 11.4508 9.15501C11.8023 8.77415 12 8.25737 12 7.71875V2.03125C12 1.49263 11.8023 0.975846 11.4508 0.594987C11.0992 0.213958 10.6222 0 10.125 0ZM6.75 11.375H5.25V9.75H6.75V11.375ZM10.5 7.71875C10.5 7.82641 10.4605 7.92983 10.3902 8.006C10.3198 8.08218 10.2245 8.125 10.125 8.125H1.875C1.77562 8.125 1.68016 8.08218 1.60984 8.006C1.53953 7.92983 1.5 7.82658 1.5 7.71875V2.03125C1.5 1.92359 1.53953 1.82017 1.60984 1.744C1.68016 1.66783 1.77562 1.625 1.875 1.625H10.125C10.2244 1.625 10.3198 1.66783 10.3902 1.744C10.4605 1.82017 10.5 1.92359 10.5 2.03125V7.71875Z" :fill="activeUrl === '/bootcamps' ? '#4E3797' : '#98A2B3' "></path>
+                                    </svg>
+                                    <span>المعسكرات والبرامج</span>
+                                </div>
+                            </a>
+                            <a x-on:click="open=false" :class="{'text-primary-500 bg-[#F5F6FA]':activeUrl==='/about'}" href="/about">
+                                <div class="flex flex-row justify-start items-center gap-6 mr-8 py-5 hover:bg-[#F5F6FA]">
+                                    <svg class="w-6 h-6" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2.43756C12 1.7911 11.7553 1.17105 11.3197 0.714003C10.8842 0.256791 10.2934 0 9.67755 0H2.32261C1.70664 0 1.11582 0.256791 0.680332 0.714003C0.244681 1.17105 0 1.7911 0 2.43756V8.7346C0 9.38106 0.244681 10.0011 0.680332 10.4582C1.11598 10.9152 1.70664 11.1722 2.32261 11.1722H3.44327L4.45167 12.2813C4.66797 12.5248 4.93216 12.7161 5.22588 12.8419C5.61217 13.0032 6.03524 13.0421 6.44235 12.954C6.84961 12.8659 7.22332 12.6547 7.51752 12.3461L8.64399 11.172H9.67755C10.2935 11.172 10.8843 10.9152 11.3198 10.458C11.7553 10.0008 12.0002 9.38089 12.0002 8.73443V2.43756H12ZM10.4516 8.7346C10.4516 8.95009 10.37 9.15677 10.2248 9.30912C10.0797 9.46147 9.88271 9.54712 9.67739 9.54712H8.64383C8.23301 9.54678 7.83898 9.71775 7.54833 10.0224L6.41412 11.2128C6.30928 11.3249 6.16605 11.388 6.01637 11.388C5.86669 11.388 5.72346 11.3249 5.61862 11.2128L4.56184 10.0549C4.2707 9.73231 3.8665 9.54882 3.44311 9.54712H2.32245C2.11713 9.54712 1.92019 9.46147 1.77502 9.30912C1.62986 9.15677 1.54825 8.95009 1.54825 8.7346V2.43756C1.54825 2.22208 1.62986 2.01539 1.77502 1.86304C1.92019 1.7107 2.11713 1.62504 2.32245 1.62504H9.67739C9.88271 1.62504 10.0797 1.7107 10.2248 1.86304C10.37 2.01539 10.4516 2.22208 10.4516 2.43756V8.7346Z" :fill="activeUrl === '/about' ? '#4E3797' : '#98A2B3' "></path>
+                                        <path d="M6.54841 3.81252C6.54841 4.26127 6.20179 4.62504 5.7742 4.62504C5.34662 4.62504 5 4.26127 5 3.81252C5 3.36377 5.34662 3 5.7742 3C6.20179 3 6.54841 3.36377 6.54841 3.81252Z" :fill="activeUrl === '/about' ? '#4E3797' : '#98A2B3' "></path>
+                                        <path d="M5.7742 5.64062C5.56888 5.64062 5.37194 5.72628 5.22678 5.87863C5.08161 6.03097 5 6.23766 5 6.45315V8.07819C5 8.3685 5.14758 8.6368 5.3871 8.78187C5.62662 8.92693 5.92179 8.92693 6.16131 8.78187C6.40083 8.6368 6.54841 8.3685 6.54841 8.07819V6.45315C6.54841 6.23766 6.46679 6.03097 6.32163 5.87863C6.17647 5.72628 5.97953 5.64062 5.7742 5.64062Z" :fill="activeUrl === '/about' ? '#4E3797' : '#98A2B3' "></path>
+                                    </svg>
+                                    <span>حول الأكاديمية</span>
+                                </div>
+                            </a>
+
+
+                            <a x-on:click="openAcademyMobile=!openAcademyMobile" :class="openAcademyMobile &amp;&amp; 'text-primary-500'">
+                                <div class="flex flex-row items-center justify-start gap-6 py-5 mr-8 ">
+
+                                    <svg x-show="!openAcademyMobile" class="w-6 h-6" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2331 1.32672C16.0207 0.891092 16.9795 0.891092 17.7671 1.32672L30.6572 8.45278C32.4476 9.44211 32.4476 12.0026 30.6572 12.9917L26.9356 15.0482V20.5584C26.9356 21.1023 26.7644 21.6353 26.3596 22.0016C25.2235 23.0274 22.2896 25 16.5002 25C10.7107 25 7.77561 23.0274 6.6407 22.0016C6.23589 21.6353 6.0647 21.1023 6.0647 20.5584V15.0482L2.34188 12.9917C0.552705 12.0023 0.552705 9.44186 2.34188 8.45278L15.2331 1.32672ZM16.5001 3.59622L29.3914 10.7223L16.5001 17.8483L3.60882 10.7223L16.5001 3.59622ZM8.67317 16.4917V20.3128C9.59772 21.0368 11.9323 22.4046 16.5001 22.4046C21.0679 22.4046 23.4026 21.0368 24.3271 20.3128V16.4917L17.7672 20.1181C16.9796 20.5537 16.0208 20.5537 15.2332 20.1181L8.67317 16.4917Z" fill="#98A2B3" stroke="#98A2B3" stroke-width="0.4"></path>
+                                    </svg>
+
+                                    <svg x-show="openAcademyMobile" class="w-6 h-6" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2331 1.32672C16.0207 0.891092 16.9795 0.891092 17.7671 1.32672L30.6572 8.45278C32.4476 9.44211 32.4476 12.0026 30.6572 12.9917L26.9356 15.0482V20.5584C26.9356 21.1023 26.7644 21.6353 26.3596 22.0016C25.2235 23.0274 22.2896 25 16.5002 25C10.7107 25 7.77561 23.0274 6.6407 22.0016C6.23589 21.6353 6.0647 21.1023 6.0647 20.5584V15.0482L2.34188 12.9917C0.552705 12.0023 0.552705 9.44186 2.34188 8.45278L15.2331 1.32672ZM16.5001 3.59622L29.3914 10.7223L16.5001 17.8483L3.60882 10.7223L16.5001 3.59622ZM8.67317 16.4917V20.3128C9.59772 21.0368 11.9323 22.4046 16.5001 22.4046C21.0679 22.4046 23.4026 21.0368 24.3271 20.3128V16.4917L17.7672 20.1181C16.9796 20.5537 16.0208 20.5537 15.2332 20.1181L8.67317 16.4917Z" fill="#4E3797" stroke="#4E3797" stroke-width="0.4"></path>
+                                    </svg>
+                                    <span>الأكاديميات التابعة</span>
+                                </div>
+                            </a>
+
+                            <div class="flex flex-col justify-start gap-6 mt-5 mr-8" x-show="openAcademyMobile" x-collapse.duration.300ms="">
+                                <hr class="w-9/12 mx-auto">
+                                <a target="_blank" href="https://developeracademy.tuwaiq.edu.sa">
+                                    <div class="flex flex-row gap-5">
+                                        <img class="w-8 h-8" src="images/apple.svg">
+                                        <div class="flex flex-col text-black text-lg hover:text-[#54BBBD]">
+                                            <p>أكاديمية مطوري آبل</p>
+                                            <p class="text-xs text-gray-400">Apple Developer Academy</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a target="_blank" href="https://metaverse.tuwaiq.edu.sa">
+                                    <div class="flex flex-row gap-5">
+                                        <img class="w-8 h-8" src="images/metaverse.svg">
+                                        <div class="flex flex-col text-black text-lg hover:text-[#54BBBD]">
+                                            <p>أكاديمية ميتافيرس</p>
+                                            <p class="text-xs text-gray-400">Metaverse Academy</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <a x-on:click="open=false" :class="{'text-primary-500 bg-[#F5F6FA]':activeUrl==='/testCenter'}" href="/TestCenter">
+                                <div class="flex flex-row justify-start items-center gap-6 mr-8 py-5 hover:bg-[#F5F6FA]">
+                                    <svg class="w-6 h-6" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2.43756C12 1.7911 11.7553 1.17105 11.3197 0.714003C10.8842 0.256791 10.2934 0 9.67755 0H2.32261C1.70664 0 1.11582 0.256791 0.680332 0.714003C0.244681 1.17105 0 1.7911 0 2.43756V8.7346C0 9.38106 0.244681 10.0011 0.680332 10.4582C1.11598 10.9152 1.70664 11.1722 2.32261 11.1722H3.44327L4.45167 12.2813C4.66797 12.5248 4.93216 12.7161 5.22588 12.8419C5.61217 13.0032 6.03524 13.0421 6.44235 12.954C6.84961 12.8659 7.22332 12.6547 7.51752 12.3461L8.64399 11.172H9.67755C10.2935 11.172 10.8843 10.9152 11.3198 10.458C11.7553 10.0008 12.0002 9.38089 12.0002 8.73443V2.43756H12ZM10.4516 8.7346C10.4516 8.95009 10.37 9.15677 10.2248 9.30912C10.0797 9.46147 9.88271 9.54712 9.67739 9.54712H8.64383C8.23301 9.54678 7.83898 9.71775 7.54833 10.0224L6.41412 11.2128C6.30928 11.3249 6.16605 11.388 6.01637 11.388C5.86669 11.388 5.72346 11.3249 5.61862 11.2128L4.56184 10.0549C4.2707 9.73231 3.8665 9.54882 3.44311 9.54712H2.32245C2.11713 9.54712 1.92019 9.46147 1.77502 9.30912C1.62986 9.15677 1.54825 8.95009 1.54825 8.7346V2.43756C1.54825 2.22208 1.62986 2.01539 1.77502 1.86304C1.92019 1.7107 2.11713 1.62504 2.32245 1.62504H9.67739C9.88271 1.62504 10.0797 1.7107 10.2248 1.86304C10.37 2.01539 10.4516 2.22208 10.4516 2.43756V8.7346Z" :fill="activeUrl === '/about' ? '#4E3797' : '#98A2B3' "></path>
+                                        <path d="M6.54841 3.81252C6.54841 4.26127 6.20179 4.62504 5.7742 4.62504C5.34662 4.62504 5 4.26127 5 3.81252C5 3.36377 5.34662 3 5.7742 3C6.20179 3 6.54841 3.36377 6.54841 3.81252Z" :fill="activeUrl === '/about' ? '#4E3797' : '#98A2B3' "></path>
+                                        <path d="M5.7742 5.64062C5.56888 5.64062 5.37194 5.72628 5.22678 5.87863C5.08161 6.03097 5 6.23766 5 6.45315V8.07819C5 8.3685 5.14758 8.6368 5.3871 8.78187C5.62662 8.92693 5.92179 8.92693 6.16131 8.78187C6.40083 8.6368 6.54841 8.3685 6.54841 8.07819V6.45315C6.54841 6.23766 6.46679 6.03097 6.32163 5.87863C6.17647 5.72628 5.97953 5.64062 5.7742 5.64062Z" :fill="activeUrl === '/about' ? '#4E3797' : '#98A2B3' "></path>
+                                    </svg>
+                                    <span>مركز الاختبارات</span>
+                                </div>
+                            </a>
+
+                        <hr class="w-9/12 mx-auto">
+                            <a x-on:click="open=false" href="/signin?returnUrl=%2F">
+                                <div class="flex flex-row justify-start items-center gap-6 mr-8 py-5 hover:bg-[#F5F6FA]">
+                                    <svg class="w-6 h-6" width="12" height="13" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.88802 4.24935C6.88802 3.09876 7.82076 2.16602 8.97135 2.16602C10.1219 2.16602 11.0547 3.09876 11.0547 4.24935C11.0547 5.39994 10.1219 6.33268 8.97135 6.33268C7.82076 6.33268 6.88802 5.39994 6.88802 4.24935ZM8.97135 0.666016C6.99233 0.666016 5.38802 2.27033 5.38802 4.24935C5.38802 6.22837 6.99233 7.83268 8.97135 7.83268C10.9504 7.83268 12.5547 6.22837 12.5547 4.24935C12.5547 2.27033 10.9504 0.666016 8.97135 0.666016ZM6.70469 9.16602C4.41271 9.16602 2.55469 11.024 2.55469 13.316C2.55469 14.9821 3.90529 16.3327 5.57135 16.3327H12.3714C14.0374 16.3327 15.388 14.9821 15.388 13.316C15.388 11.024 13.53 9.16602 11.238 9.16602H6.70469ZM11.238 10.666C12.7016 10.666 13.888 11.8525 13.888 13.316C13.888 14.1536 13.209 14.8327 12.3714 14.8327H5.57135C4.73372 14.8327 4.05469 14.1536 4.05469 13.316C4.05469 11.8525 5.24113 10.666 6.70469 10.666H11.238Z" fill="#98A2B3"></path>
+                                    </svg>
+
+                                    <span>تسجيل الدخول</span>
+                                </div>
+                            </a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="fixed  top-0 z-[9999] flex flex-wrap items-center justify-between transition-all ease-in shadow-none 
+duration-250 lg:flex-nowrap lg:justify-start py-3 lg:px-20 lg:flex hidden w-screen" navbar-main="" navbar-scroll="false" :class="{'bg-primary-500':!isHome,'inset-x-0 bg-white shadow-lg drop-shadow-2xl':fixed}" x-on:scroll.window="fixed = window.pageYOffset>30?true:false">
+    <div class="flex flex-col items-start w-full p-3 mx-auto flex-wrap-inherit">
+        <div class="flex items-center justify-between mt-2 grow sm:mt-0 sm:ml-6 md:ml-0 lg:flex lg:basis-auto">
+            <div class="flex flex-row items-center justify-start flex-1 gap-8 sm:justify-start">
+                <a href="/" class="flex">
+                    <img alt="Tuwaiq Academy" x-show="!fixed" class="h-12" src="images/logo.svg">
+                    <img alt="Tuwaiq Academy" x-show="fixed" class="h-14" src="images/logo_navbar.svg">
+                </a>
+                <div class="absolute sm:hidden top-[4rem] left-10 z-[9999]">
+                    <button type="button" x-on:click="open=!open">
+                        <img alt="" src="images/menu2.svg">
+                    </button>
+                </div>
+                <ul class="items-center hidden gap-6 text-lg text-center text-white md:flex-1 md:flex">
+                    <li class="hover:text-[#54BBBD] transition-all duration-200 ease-linear" :class="{'text-black':fixed}">
+                        <a href="/" x-on:click="open=false">الرئيسية</a>
+                    </li>
+                    <li class=" hover:text-[#54BBBD] transition-all duration-200 ease-linear" :class="{'text-black':fixed}">
+                        <a x-on:click="open=false" href="/bootcamps">المعسكرات والبرامج</a>
+                    </li>
+                    <li class=" hover:text-[#54BBBD] transition-all duration-200 ease-linear" :class="{'text-black':fixed}">
+                        <a x-on:click="open=false" href="/about">حول الأكاديمية</a>
+                    </li>
+
+                    <li class="hover:text-[#54BBBD] transition-all duration-200 ease-linear" :class="{'text-black':fixed}">
+                        <span class="relative cursor-pointer" x-on:click="openAcademy = !openAcademy">الأكاديميات
+                            التابعة</span>
+                        <div x-show="openAcademy" x-on:click.away="openAcademy=false" x-transition="" class="absolute flex flex-col gap-5 p-5 mt-5 bg-white border rounded-lg w-60 ">
+                            <a target="_blank" href="https://developeracademy.tuwaiq.edu.sa">
+                                <div class="flex flex-row gap-5">
+                                    <img src="images/apple.svg">
+                                    <div class="flex flex-col text-black text-lg hover:text-[#54BBBD]">
+                                        <p>أكاديمية مطوري آبل</p>
+                                        <p class="text-xs text-gray-400">Apple Developer Academy</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="mx-auto">
+
+                            <a target="_blank" href="https://metaverse.tuwaiq.edu.sa">
+                                <div class="flex flex-row gap-5">
+                                    <img src="images/metaverse.svg">
+                                    <div class="flex flex-col text-black text-lg hover:text-[#54BBBD]">
+                                        <p>أكاديمية ميتافيرس</p>
+                                        <p class="text-xs text-gray-400">Metaverse Academy</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </li>
+                    <li class="hover:text-[#54BBBD] transition-all duration-200 ease-linear" :class="{'text-black':fixed}">
+                        <a x-on:click="open=false" href="/TestCenter">مركز الإختبارات</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+        <a class="hover:!text-[#54BBBD] rounded font-medium hidden md:block  items-center w-40 justify-center py-4 text-xl text-white" :class="{'!text-black' :fixed || open}" href="/signin?returnUrl=%2F">
+            تسجيل الدخول
+        </a>
+</nav>
+<div id="mainTitle" x-show="title" class="items-center justify-start w-full py-10 mt-20 text-3xl text-center text-white sm:text-right sm:px-32 bg-primary-500">
+    
+</div>
+    </div>
+    <section class="min-h-[60vh]">
+        
+
+
+
+<main class="z-0 w-screen min-h-screen overflow-x-hidden" x-data="mainHomeData" x-cloak="">
+    <section id="intro" class="w-screen" x-data="{size : window.innerHeight}" x-on:resize.window="size = window.innerHeight" x-init="()=> size=window.innerHeight">
+        <div class="flex items-center justify-center h-full border-b-0 border-b-solid border-b-transparent">
+            <video class="object-cover w-full h-screen -mx-1" autoplay="" loop="" muted="" playsinline="">
+                <source src="media/introS2.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-x-0 w-screen h-screen opacity-75 hover:text-red overlay1"></div>
+            <div class="absolute inset-x-0 w-screen h-screen opacity-25 overlay2">
+            </div>
+            <div class="absolute inset-x-0 w-screen h-screen opacity-40 overlay3">
+            </div>
+            <div class="absolute top-0 left-0 right-0 w-full p-8 rounded-2xl">
+                <div class="flex flex-col justify-center h-screen item-center gap-y-2 sm:gap-y-4" :class="{'mt-10 !gap-y-1':size <= 400}">
+                    <div class="flex items-center justify-center text-6xl font-bold leading-normal text-white sm:text-8xl" :class="{'!text-2xl':size <= 400}">
+                        تعلم تقنيات
+                    </div>
+                    <div class="flex items-center justify-center text-6xl font-bold leading-normal text-white sm:text-8xl" :class="{'!text-3xl':size <= 400}">
+                        المستقبــــــل
+                    </div>
+                    <div class="flex justify-center py-3 text-lg text-black item-center">
+                        <a class="rounded-full drop-shadow bg-[#54BBBD] hover:bg-[#54BBBD]/80 flex items-center justify-center px-24 py-4 
+                            w-full sm:max-w-lg mt-8 sm:mx-20 md:text-5xl  text-2xl text-white font-bold" :class="{'!text-2xl !px-5 !py-3 !w-64':size<= 400}" href="/bootcamps">
+                            ابـــــــــدأ
+                            الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="last-activities" class="grid w-screen grid-cols-1" x-cloak="">
+        <div class="flex flex-col w-screen gap-10 bg-gray-100 pb-14">
+            <h1 class="w-full mb-5 text-3xl font-bold text-center text-primary-500 pt-14">المعسكرات والبرامج</h1>
+            <template x-if="isLoadingCourses">
+                <div class="!z-[999999] w-full flex items-center justify-center flex-1 col-span-3 h-60">
+    <div x-transition.opacity="" class=" z-990">
+    </div>
+    <div class="flex items-center justify-center mx-auto z-990">
+        <div class="mx-auto rounded-lg">
+            <div role="status" class="flex items-center justify-center w-full h-full mx-auto my-auto ">
+                <svg aria-hidden="true" class="w-16 h-16 mr-2 text-slate-200 animate-spin dark:text-slate-600 fill-white" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path>
+                    <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path>
+                </svg>
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+            </template>
+            <template x-if="!isLoadingCourses &amp;&amp; courses">
+                <div class="grid items-center justify-center grid-cols-1 gap-4 px-4 mx-auto md:px-10 md:grid-cols-2 xl:grid-cols-3 md:gap-8 gap-y-14 lg:px-32">
+                    <template x-for="course in courses">
+                        <div x-on:click="course.isRegistrationOpen &amp;&amp; navigateTo('/bootcamp/'+course?.slug+'/view')" class="relative transition-all duration-200 ease-linear sm:w-96 " :class="{
+        'cursor-pointer hover:scale-105 hover:shadow-shadow': course.isRegistrationOpen === true,
+    }" x-cloak="">
+    <div class="w-80 md:min-w-80 md:w-full bg-white p-6 rounded-2xl border-r-[15px] shadow-shadow space-y-4 h-full flex flex-col" :class="{
+                                    '!border-[#B4B4B4]': !course.isRegistrationOpen,
+                                    'border-[#ABADF5]': course.initiativeCategoryName == 'معسكر',
+                                    'border-[#91D8DB]': course.initiativeCategoryName == 'برنامج',
+                                    'border-[#C084FC]': course.initiativeCategoryName == 'لقاء',
+                                    'border-[#BEE5C2]': course.initiativeCategoryName!= 'معسكر' &amp;&amp; course.initiativeCategoryName!= 'برنامج' &amp;&amp; course.initiativeCategoryName!= 'لقاء'
+                                    }">
+        <div class="flex-col flex-1">
+            <div class="relative flex justify-between -ml-7">
+                <p class="w-full text-lg" x-text="course.initiativeCategoryName" :class="{
+                                            'text-[#B4B4B4]': !course.isRegistrationOpen,
+                                            'text-[#ABADF5]': course.isRegistrationOpen &amp;&amp; course.initiativeCategoryName == 'معسكر',
+                                            'text-[#91D8DB]': course.isRegistrationOpen &amp;&amp; course.initiativeCategoryName == 'برنامج',
+                                            'text-[#C084FC]': course.isRegistrationOpen &amp;&amp; course.initiativeCategoryName == 'لقاء',
+                                            'text-[#BEE5C2]': course.isRegistrationOpen &amp;&amp; course.initiativeCategoryName!= 'معسكر' &amp;&amp; course.initiativeCategoryName!= 'برنامج' &amp;&amp; course.initiativeCategoryName!= 'لقاء'
+                                            }">
+                </p>
+            </div>
+            <h2 class="text-lg text-[#4D4D4D] mt-2 h-24 font-medium flex-1" x-text="course?.title?.substring(0,250)">
+                تصميم الويب باستخدام HTML CSS
+            </h2>
+            <div class="flex items-center justify-start gap-x-4">
+                <span class="flex items-center justify-center text-xs" x-show="course?.initiativeAttendType === 2 || (course?.initiativeAttendType !== 2 &amp;&amp; course?.location?.name)">
+                    <img class="h-5 ml-1" src="images/location_icon.svg" alt="">
+                    <span x-text="course?.location?.name" x-show="course?.initiativeAttendType !== 2"></span>
+                    <span x-text="'عن بعد'" x-show="course?.initiativeAttendType === 2"></span>
+                </span>
+                <span class="flex items-center justify-center text-xs">
+                    <img class="h-5 ml-1" src="images/caleander_icon.svg" alt="">
+                    <span x-text="humanizeDateRange(course.startDate, course.endDate)">
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="flex items-center justify-between pb-4">
+            <span class="flex items-center justify-center text-xs">
+                <img class="h-5 ml-1 text-slate-900" src="images/caleander2_icon.svg" alt="" x-show="course.startDate">
+                <span x-text="'يبدأ في ' + prettyDate(course.startDate)"></span>
+            </span>
+            <a :href="'/bootcamp/'+course?.slug+'/view'" x-show="course.isRegistrationOpen" class="w-24 text-center transition-colors duration-300 border rounded-full h-7 hover:text-white" :class="{
+                                               'text-[#858AEC] border-[#858AEC] hover:bg-light-purple': course.initiativeCategoryName == 'معسكر',
+                                               'text-[#91D8DB] border-[#91D8DB] hover:bg-[#91D8DB]': course.initiativeCategoryName == 'برنامج',
+                                               'text-[#C084FC] border-[#C084FC] hover:bg-[#C084FC]': course.initiativeCategoryName == 'لقاء',
+                                               'text-[#BEE5C2] border-[#BEE5C2] hover:bg-[#BEE5C2]': course.initiativeCategoryName!= 'معسكر' &amp;&amp; course.initiativeCategoryName!= 'برنامج' &amp;&amp; course.initiativeCategoryName!= 'لقاء'
+                                               }">
+                التفاصيل
+            </a>
+            <button type="button" disabled="" x-show="!course.isRegistrationOpen" class="w-24 text-center transition-colors duration-300 ease-linear border rounded-full h-7 text-slate-300 bg-slate-100 border-slate-300">
+                مغلق
+            </button>
+        </div>
+
+    </div>
+
+    <img :src="'/api/InitiativeImages/'+course?.logo+'?h=100'" x-show="course.logo" alt="" class="absolute top-0 object-contain object-center -mt-10 bg-white rounded-full drop-shadow h-16 w-16 left-5" :class="{'grayscale':course.isRegistrationOpen === false}">
+</div>
+                    </template>
+                </div>
+            </template>
+
+            <a class="rounded-full border transition-colors duration-300 p-2 px-8 mx-auto text-[#4E3797] hover:text-white border-[#4E3797] hover:bg-[#4E3797] bg-gray-100" href="/bootcamps">
+                المزيد من المعسكرات والبرامج
+            </a>
+        </div>
+        <div class="w-screen pb-14" id="numbersOfAcademy">
+            <h1 class="pb-20 text-3xl font-bold text-center text-primary-500 py-14">أرقام الأكاديمية</h1>
+            <div class="flex flex-col gap-y-14">
+                <div class="flex flex-wrap items-center justify-center px-2 gap-x-24 gap-y-12">
+                    <div class="bg-white  shadow-lg  rounded-2xl relative w-5/6 h-full md:w-60 md:h-[17rem]">
+                        <div class="absolute flex items-center justify-center w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-full top-3 left-2/4 bg-secondary">
+                            <img src="images/rocket_icon.svg" alt="Academy Courses Count">
+                        </div>
+                        <div class="grid gap-4 p-4 justify-items-center">
+                            <h2 class="w-full px-5 mb-2 text-2xl font-bold text-center text-secondary-dark pt-14">
+                                عدد البرامج التدريبية
+                            </h2>
+                            <h1 class="text-4xl font-bold text-purple-800">+<span id="counter1">500</span></h1>
+                            <span class="text-base text-slate-900">معسكر وبرنامج</span>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-2xl relative w-5/6 h-full md:w-60 md:h-[17rem]">
+                        <div class="absolute flex items-center justify-center w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-full top-3 left-2/4 bg-secondary">
+                            <img src="images/member_icon.svg" alt="Trainees count">
+
+                        </div>
+                        <div class="grid gap-4 p-4 justify-items-center">
+                            <h2 class="px-5 mb-2 text-2xl font-bold text-center text-secondary-dark pt-14 w-30">
+                                عدد المستفيدين من البرامج
+                            </h2>
+                            <h1 class="text-4xl font-bold text-purple-800">+<span id="counter2">12000</span></h1>
+                            <span class="text-base text-slate-900">متدرب حضوري</span>
+                        </div>
+                    </div>
+                    <div class="bg-white  shadow-lg  rounded-2xl relative w-5/6 h-full md:w-60 md:h-[17rem]">
+                        <div class="absolute flex items-center justify-center w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-full top-3 left-2/4 bg-secondary">
+                            <img src="images/member_icon.svg" alt="Satar Trainees count">
+
+                        </div>
+                        <div class="grid gap-4 p-4 justify-items-center">
+                            <h2 class="w-full px-10 mb-2 text-2xl font-bold text-center text-secondary-dark pt-14">
+                                منــصــة ســـطــر
+                            </h2>
+                            <h1 class="text-4xl font-bold text-purple-800">+<span id="counter3">560000</span></h1>
+                            <span class="text-base text-slate-900">متدرب</span>
+                        </div>
+                    </div>
+                    <div class="bg-white  shadow-lg  rounded-2xl relative w-5/6 h-full md:w-60 md:h-[17rem]">
+                        <div class="absolute flex items-center justify-center w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-full top-3 left-2/4 bg-secondary">
+                            <img src="images/registerd_icon.svg" alt="Total Registered">
+
+                        </div>
+                        <div class="grid gap-4 p-4 justify-items-center">
+                            <h2 class="w-full px-5 mb-2 text-2xl font-bold text-center text-secondary-dark pt-14">
+                                عدد المسجلين في البرامج
+                            </h2>
+                            <h1 class="text-4xl font-bold text-purple-800">+<span id="counter4">800000</span></h1>
+                            <span class="text-base text-slate-900">مسجل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <a href="/report" target="_blank" class="rounded-full border mx-auto transition-colors duration-300 p-2 px-8 text-[#4E3797] hover:text-white border-[#4E3797] hover:bg-[#4E3797] bg-white">
+                        إقرأ تقرير منجزات الأكاديمية
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="activities" class="w-screen bg-primary-500 pb-14">
+        <h1 class="text-3xl font-bold text-center text-white py-14">
+            أنشطة الأكاديمية
+        </h1>
+        <div class="flex flex-wrap items-center justify-center mx-auto md:justify-evenly max-w-7xl gap-14 md:px-8 sm:px-1">
+            <div class="flex flex-col items-center justify-center w-10/12 h-full p-4 py-2 text-center bg-white shadow sm:w-64 rounded-2xl">
+                <img src="images/pc-icons.svg" class="w-16 h-12 mx-auto my-10" alt="pc icon">
+                <div class="flex justify-center">
+                    <h2 class="w-full px-10 mb-10 text-2xl font-medium text-center text-secondary-dark">
+                        المعسكرات
+                        والبـــرامـــج
+                    </h2>
+                </div>
+                <p class="flex-1 mb-8 text-xl text-black">
+                    معسكرات وبرامج تقنية احترافية، لاكتساب المهارات اللازمة في مجالات متخصصة وواعدة في سوق العمل.
+                </p>
+                <a class="bg-primary-500 text-white font-bold py-2 px-4 rounded-full w-full  border transition-colors duration-300  border-[#4E3797] hover:bg-white hover:text-[#4E3797]" href="/bootcamps">
+                    انتقل لصفحة التسجيل
+                </a>
+            </div>
+            <div class="flex flex-col items-center justify-center w-10/12 h-full p-4 py-2 text-center bg-white shadow sm:w-64 rounded-2xl">
+                <img src="images/coding-icons.svg" class="w-16 h-12 mx-auto my-10" alt="coding icon">
+                <div class="flex justify-center">
+                    <h2 class="w-full px-10 mb-10 text-3xl font-medium text-center text-secondary-dark ">
+                        منصة سـطــــر
+                    </h2>
+                </div>
+                <p class="flex-1 mb-8 text-xl text-black">
+                    منصة تعليمية مجانية مُتاحة عن بعد وباللغة العربية في مختلف مجالات البرمجة والتقنية.
+                </p>
+                <a href="https://satr.codes/" target="_blank" class="bg-primary-500 text-white font-bold py-2 px-4 rounded-full w-full border transition-colors duration-300  border-[#4E3797] hover:bg-white hover:text-[#4E3797]">
+                    تعلم عن بعد
+                </a>
+            </div>
+            <div class="flex flex-col items-center justify-center w-10/12 h-full p-4 py-2 text-center bg-white shadow sm:w-64 rounded-2xl">
+                <img src="images/webinar-icons.svg" class="w-16 h-12 mx-auto my-10" alt="webinar icons">
+                <div class="flex justify-center">
+                    <h2 class="w-full px-10 mb-10 text-3xl font-medium text-center text-secondary-dark ">
+                        ويبينـــار
+                        طويــــق
+                    </h2>
+                </div>
+                <p class="flex-1 mb-8 text-xl text-black">
+                    لقاء إثرائي من تقديم خبراء ومختصين تقنيين، لمناقشة مواضيع في مجالات التقنية والبرمجة والأمن
+                    السيبراني.
+                </p>
+                <a href="https://www.youtube.com/playlist?list=PLc4GVqV-4dhEUNTwsYc9qvRAVHdE_Z1ty" target="_blank" class="bg-primary-500 text-white
+                font-bold py-2
+                px-4 rounded-full w-full border transition-colors duration-300  border-[#4E3797] hover:bg-white hover:text-[#4E3797]">
+                    تعلــم عن بعــــد
+                </a>
+            </div>
+            <div class="flex flex-col items-center justify-center w-10/12 h-full p-4 py-2 text-center bg-white shadow sm:w-64 rounded-2xl">
+                <img src="images/tuwaiqtalk-icons.svg" class="w-16 h-12 mx-auto my-10" alt="tuwaiqtalk icon">
+                <div class="flex justify-center">
+                    <h2 class="w-full px-16 mb-10 text-3xl font-medium text-center text-secondary-dark">
+                        طويق
+                        Talk
+                    </h2>
+                </div>
+                <p class="flex-1 mb-8 text-xl text-black">
+                    ندوة أسبوعية من تقديم خبراء ومختصين، عن أبرز المواضيع المتداولة في مختلف المجالات التقنية.
+                </p>
+                <a href="https://www.youtube.com/playlist?list=PLc4GVqV-4dhHK7G0o6ttMfc0ULvRwXiCb" target="_blank" class="bg-primary-500 text-white font-bold py-2
+                px-4 rounded-full w-full border transition-colors duration-300  border-[#4E3797] hover:bg-white hover:text-[#4E3797]">
+                    تعـــرف أكـــــثر
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section id="news" class="w-screen pb-6">
+        <h1 class="text-3xl font-bold text-center text-primary-500 py-14">
+            الأخبار والفعاليات
+        </h1>
+        <template x-if="isLoadingNews">
+            <div class="!z-[999999] w-full flex items-center justify-center flex-1 col-span-3 h-60">
+    <div x-transition.opacity="" class=" z-990">
+    </div>
+    <div class="flex items-center justify-center mx-auto z-990">
+        <div class="mx-auto rounded-lg">
+            <div role="status" class="flex items-center justify-center w-full h-full mx-auto my-auto ">
+                <svg aria-hidden="true" class="w-16 h-16 mr-2 text-slate-200 animate-spin dark:text-slate-600 fill-white" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path>
+                    <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path>
+                </svg>
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+        </template>
+        <template x-if="!isLoadingNews">
+            <div class="grid items-center justify-center grid-cols-1 sm:flex gap-x-14">
+                <div class="flex flex-col items-center justify-center px-2 w-full sm:max-w-[45rem]">
+                    <div :class="{'owl-carousel owl-theme':fixedNews?.length>1}" id="fixedNews-carousel">
+                        <template x-if="fixedNews">
+                            <template x-for="news in fixedNews">
+                                <div class="item max-w-[45rem]">
+                                    <div class="flex flex-col items-center justify-center px-2 max-w-[45rem]">
+                                        <template x-if="news.image!==undefined">
+                                            <img class="w-full rounded-t-lg max-h-[30rem]" :src="'/api/images/'+news.image+'?h=500'" alt="News">
+                                        </template>
+                                        <div class="flex">
+                                            <div class="w-full sm:w-[75%] lg:w-3/5 h-full min-h-[20rem] bg-slate-50 p-4">
+                                                <p class="text-lg text-secondary-dark" x-text="news.newsCategory?.name">
+                                                    شـــــراكات
+                                                </p>
+                                                <a class="text-2xl font-medium text-black hover:text-blue-600" :href="'/news/'+news.id" x-html="news.title">
+                                                    طويق Talk بالشراكة مع هيئة الاتصالات والفضـــاء
+                                                    والتقنيـــة
+                                                </a>
+                                                <div class="text-sm pt-5 h-full max-w-[35rem] text-right" x-html="(news.description?.length>450 ? news.description.substring(0,450)+' .....' : news.description) +getMoreLink(news.id)">
+                                                </div>
+                                            </div>
+                                            <div class="hidden h-16 w-28 bg-primary-500 sm:block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+                </div>
+
+
+                <div class="pt-10 grid h-full w-full sm:max-w-[30rem]">
+                    <h1 class="mb-5 text-2xl font-bold text-center text-secondary">المزيد من الأخبار</h1>
+                    <div class="flex items-center justify-center">
+                        <ul id="newsList" class="xl:space-x-0 justify-between flex flex-col w-[90%] xl:w-full overflow-y-auto scroll-smooth max-h-[28rem] sm:max-h-[44rem]">
+                            <template x-for="news in latestNews">
+                                <li class="flex flex-col w-11/12 min-w-full gap-3 border-b md:grid border-primary-500 md:mr-0 md:py-10">
+                                    <a :href="'/news/'+news.id" class="flex flex-col hover:text-blue-600">
+
+                                        <span class="font-normal leading-8 text-right sm:text-xl md:font-medium" x-html="news.title">
+                                            إطلاق أول أكاديمية ميتافيرس بالشرق الأوسط
+                                            في طويق بالشراكة مع شركة ميتا
+                                        </span>
+                                        <span class="mb-5 text-sm text-right md:mb-1 text-slate-300" x-text="news.newsDate?.split('T')[0]">
+                                            20 فبراير 2023
+                                        </span>
+                                    </a>
+
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+
+                    <div class="flex py-4">
+                        <template x-if="moreNewsLoading">
+                            <div class="!z-[999999] w-full flex items-center justify-center flex-1 col-span-3 h-60">
+    <div x-transition.opacity="" class=" z-990">
+    </div>
+    <div class="flex items-center justify-center mx-auto z-990">
+        <div class="mx-auto rounded-lg">
+            <div role="status" class="flex items-center justify-center w-full h-full mx-auto my-auto ">
+                <svg aria-hidden="true" class="w-16 h-16 mr-2 text-slate-200 animate-spin dark:text-slate-600 fill-white" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path>
+                    <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path>
+                </svg>
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+                        </template>
+                        <template x-if="canLoadMoreNews &amp;&amp; !moreNewsLoading">
+                            <div class="mx-auto mt-auto">
+                                <button class="rounded-full border p-2 px-8 mx-auto text-[#4E3797] hover:text-white border-[#4E3797] hover:bg-[#4E3797] bg-white" x-on:click="loadMoreNews" id="loadMoreButton">
+                                    <div>
+                                        تحميل المزيد من الأخبار
+                                    </div>
+                                </button>
+                            </div>
+                        </template>
+                    </div>
+
+                </div>
+
+            </div>
+        </template>
+
+    </section>
+
+    <section class="w-screen bg-gray-100 py-14">
+        <h1 class="text-3xl font-bold text-center text-primary-500 pb-14">
+            الشركاء
+        </h1>
+        <div id="partners-carousel" class="w-full pt-10 pb-20 mx-auto owl-carousel owl-theme sm:max-w-7xl">
+
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32">
+                    <img alt="" src="images/Partner1.png" class="h-full">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32">
+                    <img alt="" src="images/Partner2.png" class="h-full">
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32 ">
+                    <img alt="" src="images/Partner3.png" class="w-full h-full">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32 ">
+                    <img alt="" src="images/Partner4.png" class="w-full h-full">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32 ">
+                    <img alt="" src="images/Partner5.png" class="w-full h-full">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32 ">
+                    <img alt="" src="images/Partner6.png" class="w-full h-full">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32 ">
+                    <img alt="" src="images/Partner7.png" class="w-full h-full">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32 ">
+                    <img alt="" src="images/Partner8.png" class="w-full h-full">
+                </div>
+            </div>
+            <div class="flex items-center justify-center mx-5 item">
+                <div class="flex items-center justify-center max-h-32 ">
+                    <img alt="" src="images/Partner9.png" class="w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mail" class="flex items-center justify-center w-screen py-8 bg-secondary-dark pb-14">
+        <div class="container gap-5 mx-auto max-w-7xl">
+            <h1 class="mb-16 text-3xl font-bold text-center text-white px-14">اشترك في النشرة البريدية</h1>
+            <div class="flex flex-wrap items-center justify-center">
+                <form class="flex flex-wrap gap-4 px-8 sm:grid sm:grid-cols-4 justify-items-center" method="post" x-on:submit.prevent="subscriptNewsLetter">
+                    <input type="text" x-model="fName" class="bg-white focus:outline-none focus:shadow-outline border border-[#F9FAFB] rounded-lg 
+                        py-2 px-4
+                        block w-full lg:w-48 " placeholder="الاسم الأول">
+                    <input type="text" x-model="lName" class="bg-white focus:outline-none focus:shadow-outline border border-[#F9FAFB] rounded-lg py-2 px-4 block w-full lg:w-48" placeholder="الاسم الأخير">
+                    <input type="text" x-model="email" class="bg-white focus:outline-none focus:shadow-outline border border-[#F9FAFB] rounded-lg py-2 px-4 block w-full lg:w-96" placeholder="ادخل بريدك الإلكتروني">
+                    <button type="submit" class="h-12 rounded-2xl bg-[#4E3797] hover:bg-purple-900 text-white font-bold py-2 px-4 focus:outline-none 
+                                focus:shadow-outline w-full md:w-44">
+
+                        إشـــتـــــراك
+                    </button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8IM5oBWkB89LtYOdn3BGHxz8sDoReoxi0HkaIt7FmfpOjmoiiiqXtudZCS08FdFA3XQYB7Be0DP4hRcYW7jX7aF1ORX9i9-wTOIIWLty3CGFSyFv_QruYk5ISvAVnadXCUi6c_RiBhTxj19I74p0wwg"></form>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    </section>
+
+        <section>
+            <footer class="w-screen h-full text-white min-h-96">
+                <div class="bg-[#4E3797] bg-bottom bg-cover w-full h-full px-5 sm:px-1 z-[9999]">
+                    <div class="w-full px-10 py-8 pt-20 mx-auto max-w-7xl">
+                        <div class="grid justify-center grid-cols-2 text-center lg:grid-cols-5 xl:text-right gap-y-4 sm:gap-y-10">
+                            <div class="flex items-center justify-center col-span-2 px-5 lg:col-span-1 md:col-span-2">
+                                <img alt="" src="images/logo.svg">
+                            </div>
+                            <div class="flex flex-col items-center justify-center px-2 transition-all duration-200 ease-linear">
+                                <a href="https://bootcamp.sa/forms/wdVS11qexZ/apply" target="_blank" class="my-2 hover:text-[#91D8DB]">
+                                    شارك كمدرب
+                                </a>
+                                <a class=" hover:text-[#91D8DB] transition-all duration-200 ease-linear" href="/about">حول
+                                    الأكاديمية</a>
+                            </div>
+                            <div class="flex flex-col items-center justify-center ">
+                                <a class="my-2 hover:text-[#91D8DB] transition-all duration-200 ease-linear" href="/terms">الشروط
+                                    والأحكام</a>
+                                <a class=" hover:text-[#91D8DB] transition-all duration-200 ease-linear" href="/privacy">سياسة
+                                    الخصوصية</a>
+                            </div>
+
+                            <div class="flex flex-col items-center justify-center col-span-2 p-2 sm:p-10 lg:col-span-1 md:col-span-2">
+                                <div class="flex gap-2 w-44 md:w-40 ">
+                                    <a target="_blank" class="w-full h-full transition-all duration-300 ease-in-out hover:scale-125" href="https://www.linkedin.com/company/tuwaiqacademy">
+                                        <img class="w-full h-full " src="images/linkedin-icon.svg" alt="Tuwaiq Academy Linkedin Account">
+                                    </a>
+                                    <a target="_blank" class="w-full h-full transition-all duration-300 ease-in-out hover:scale-125" href="https://www.snapchat.com/add/tuwaiqacademy">
+                                        <img class="w-full h-full" src="images/snapchat-icon.svg" alt="Tuwaiq Academy Snapchat Account">
+                                    </a>
+                                    <a target="_blank" class="w-full h-full" href="https://www.youtube.com/channel/UC_pOwgeaVK7bg3z7fJB5N8w">
+                                        <img class="w-full h-full transition-all duration-300 ease-in-out hover:scale-125" src="images/youtube-icon.svg" alt="Tuwaiq Academy Youtube Account">
+                                    </a>
+                                    <a target="_blank" class="w-full h-full" href="https://twitter.com/TuwaiqAcademy">
+                                        <img class="w-full h-full transition-all duration-300 ease-in-out hover:scale-125" src="images/twitter-icon.svg" alt="Tuwaiq Academy Twitter Account">
+                                    </a>
+                                    <a target="_blank" class="w-full h-full" href="https://discord.gg/DWpUH7wFxj">
+                                        <img class="w-full h-full transition-all duration-300 ease-in-out hover:scale-125" src="images/discord-icon.svg" alt="Tuwaiq Academy Discord Account">
+                                    </a>
+                                </div>
+                                <h1 class="text-lg text-center text-white" dir="ltr">@TuwaiqAcademy</h1>
+                            </div>
+                            <div class="flex items-center justify-center col-span-2 px-5 lg:col-span-1 md:col-span-2">
+                                <img class="sm:h-14" src="images/logos2.svg" alt="Logo">
+                            </div>
+                        </div>
+                        <div class="pb-4 mt-4 text-center pt-14">
+                            <p>جميع الحقوق محفوظة لأكاديمية طويق 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+
+<script src="js/jquery.min.js" nonce=""></script>
+<script src="js/js.cookie.min.js" nonce=""></script>
+<script src="js/jquery-confirm.min.js" nonce=""></script>
+<script src="js/jquery.mask.min.js" nonce=""></script>
+<script src="js/select2.full.min.js" nonce=""></script>
+<script src="js/lodash.min.js" nonce=""></script>
+<script src="js/timeout.min.js" nonce=""></script>
+<script src="js/flatpickr.min.js" nonce=""></script>
+<script src="js/momentPlugin.js" nonce=""></script>
+<script src="js/minMaxTimePlugin.js" nonce=""></script>
+<script src="js/ar.js" nonce=""></script>
+<script src="js/ar_1.js" nonce=""></script>
+<script src="js/toastify.js" nonce=""></script>
+<script src="js/util.js" data-isauthenticated="false" nonce=""></script>
+
+<script ishome="isHome" charset="utf-8" src="js/layout.js" token="CfDJ8IM5oBWkB89LtYOdn3BGHxz8sDoReoxi0HkaIt7FmfpOjmoiiiqXtudZCS08FdFA3XQYB7Be0DP4hRcYW7jX7aF1ORX9i9-wTOIIWLty3CGFSyFv_QruYk5ISvAVnadXCUi6c_RiBhTxj19I74p0wwg" nonce=""></script>
+
+    <script nonce="">
+        window.landingData = {
+            coursesNormal: null,
+            coursesJunior: null,
+            news: [{"id":"6dd0ed96-2446-4d55-a80c-8cba6841c31e","title":"أكاديمية طويق تطلق التسجيل في تحدي \"طويق فلاق يارد\" بمجال الأمن السيبراني","image":"uwz0bmzu.byg.png","description":"أعلنت أكاديمية طويق بدء التسجيل في تحدي طويق فلاق يارد المقرر إقامته يوم السبت 23 أكتوبر الجاري بمدينة الرياض، والذي يُعنى بتشجيع ودعم الكوادر الوطنية على الإبداع والابتكار في مجال الأمن السيبراني، وتعزيز دور الأكاديمية في إقامة مختلف الفعاليات والأنشطة التقنية في مجال الأمن السيبراني ومجالات التقنيات الحديثة.\nويهدف تحدي طويق فلاق يارد إلى دعم الكوادر التقنية باستخدام أبرز التقنيات الحديثة في مجال الأمن السيبراني عبر منصة فلاق يارد، بأكثر من 12 تحديًا في مجال الأمن السيبراني بجوائز تصل إلى 50,000 ريال سعودي مقسمة على النحو التالي: المركز الأول 25,000 ريال، المركز الثاني 15,000 ريال، المركز الثالث 10,000 ريال، كما سيتم تأهيل الفرق المتميزة للمشاركة في تحديات CTF المقامة في فعالية بلاك هات 23 في شهر نوفمبر القادم، كما أتاحت الأكاديمية التسجيل للفرق من خلال موقعها الإلكتروني: Tuwaiq.edu.sa\nيذكر أن أكاديمية طويق تعمل على إقامة العديد من البرامج والأنشطة التقنية لدعم المواهب والقدرات في مختلف المجالات التقنية، كما تقدم الأكاديمية معسكرات وبرامج متخصصة من احتياجات سوق العمل، تقام بالشراكة مع كبرى الجهات العالمية لتطوير وتأهيل الكوادر الوطنية وسد الفجوة بين تطور التقنيات الحديثة ومتطلبات سوق العمل.\n // انتهى //","newsCategoryId":"503d28de-b991-4cbb-bb2f-246ceac180a7","newsCategory":{"id":"503d28de-b991-4cbb-bb2f-246ceac180a7","name":"علوم وتقنيات","isActive":true},"tags":["الأمن السيبراني","تقنية","مسابقة","جوائز","جائزة","تحدي","أمن سيبراني"],"publishTimeStamp":"2023-10-18T14:08:20+00:00","newsDate":"2023-10-17T00:00:00+00:00","isFixed":true,"isPublished":true},{"id":"247213c2-3371-4ed7-b77d-2aaf6bc94e03","title":"أكاديمية طويق تطلق الشراكة مع \"CompTIA\" لتقديم برامج متخصصة بشهادات احترافية","image":"kdehcbnv.xgq.JPG","description":" أعلنت أكاديمية طويق عن توقيع عقد شراكة مع منظمة CompTIA بهدف تأهيل الكوادر الوطنية في أبرز مجالات التقنيات الحديثة عبر إطلاق برامج متخصصة بشهادات احترافية معتمدة.\n ووقّع عقد الشراكة كلًا من الرئيس التنفيذي لأكاديمية طويق عبدالعزيز الحمادي والرئيس التنفيذي لمنظمة CompTIA السيد Todd Thipodeaux, ضمن مؤتمر CompTIA السنوي للشركاء المقام في لندن بالمملكة المتحدة.\n وتأتي هذه الشراكة امتدادًا لدور الأكاديمية الرائد في عقد الشراكات المميزة مع كبرى المنظمات والشركات التقنية العالمية، لتأهيل وتطوير الكوادر الوطنية عبر برامج نوعيّة تسهم في تحقيق مستهدفات رؤية السعودية 2030م، حيث تستهدف الشراكة تأهيل أكثر من 3,000 مستفيد، في أكثر من 100 برنامج بأكثر من 3,000 شهادة احترافية حتى عام 2025م، في مجالات البنية التحتية والأمن السيبراني والشبكات وإدارة مشاريع تقنية المعلومات وتحليل البيانات وغيرها من مجالات التقنيات الناشئة، كما تستهدف أكاديمية طويق عبر هذه الشراكة إلى تلبية احتياجات الوظائف التقنية من خلال تمكين المتدربين بالخبرات والقدرات الأكثر طلبًا في سوق العمل، ولمتابعة أحدث المعسكرات والبرامج زيارة الرابط: https://tuwaiq.edu.sa .\n يذكر بأن منظمة CompTIA تعتبر من أكبر المنظمات العالمية في مجال تقنية المعلومات وتقديم البرامج الاحترافية بشهادات مهنية معتمدة في أكثر من 120 دولة حول العالم، كما تعمل أكاديمية طويق إلى جلب أفضل الخبراء والمختصين لدعم إمكانيات وقدرات الكوادر الوطنية وصقل المهارات التقنية لدى المتدربين باستخدام أفضل الممارسات العالمية.\n // انتهى //","newsCategoryId":"27eaf8f9-ef99-4bc2-a508-739f03ff7cd5","newsCategory":{"id":"27eaf8f9-ef99-4bc2-a508-739f03ff7cd5","name":"شراكات","isActive":true},"tags":["شراكة","تقنية","شهادة","برمجة","معتمدة"],"publishTimeStamp":"2023-10-16T06:03:31+00:00","newsDate":"2023-10-09T00:00:00+00:00","isFixed":false,"isPublished":true},{"id":"910af5f1-ef2f-44c1-9a9a-edc680f64445","title":"أكاديمية طويق مركز عالمي معتمد لاختبارات الشهادات المهنية والاحترافية","image":"dtm4swu4.cgd.png","description":"حصلت أكاديمية طويق التابعة للاتحاد السعودي للأمن السيبراني والبرمجة والدرونز، على اعتماد عالمي جديد لتقديم الاختبارات والشهادات المهنية والاحترافية بمقر الأكاديمية، وذلك بالشراكة مع منظمة Pearson Vue، التي تعمل مع العديد من المؤسسات والمنظمات حول العالم لتوفير البنية التحتية التقنية لتنفيذ الاختبارات والحصول على الشهادات الاحترافية في مختلف مجالات تقنية المعلومات والتقنيات الناشئة.\n يأتي ذلك ضمن مساعي الأكاديمية المستمرة في تحقيق مستهدفات رؤية السعودية 2030 عبر دعم الاحتياج المطلوب في الوظائف\n التقنية بأفضل الكوادر الوطنية من خلال عقد شراكات عالمية تنقل الخبرات باستخدام أفضل المنهجيات والممارسات؛ لتمكينهم وتأهيلهم في مواكبة متطلبات وظائف سوق العمل بقطاعاته المختلفة وتطوير حلول تقنية إبداعية ومبتكرة تعزز نمو مشاريع الجهات الرائدة والشركات الناشئة.\n وفي ضوء ذلك جاء اعتماد مركز اختبارات الشهادات المهنية والاحترافية في أكاديمية طويق، بأكثر من 300 شهادة احترافية معتمدة كفرصة للمهتمين بالحصول على شهادات لتطوير وصقل مهاراتهم في مجالات التقنية والحوسبة السحابية والأمن السيبراني وإدارة وتحليل البيانات والذكاء الاصطناعي من كبرى الشركات مثل: Apple, Microsoft, IBM, CompTIA, cisco, aws, Alibaba, Dell, PMI, certnexus وغيرها من الجهات, ويمكن للمتدربين حجز اختبار الشهادة الاحترافية عبر الرابط التالي: https://tuwaiq.edu.sa/testcenter.\n يذكر أن أكاديمية طويق أسهمت في تخريج أكثر من 9,500 متدرب ومتدربة في 10 مجالات تدريبية وأكثر من 60 شراكة عالمية،\n حيث تعمل الأكاديمية دوريًا مع عدة جهات من مختلف القطاعات للمساهمة بتوظيف خرّيجي معسكرات وبرامج طويق في شواغر وظيفية بمختلف المجالات التقنية والرقمية؛ بهدف تمكينهم بالمهارات اللازمة وسد الفجوة بين تطور التقنيات الحديثة ومتطلبات سوق العمل.\n // انتهى //","newsCategoryId":"503d28de-b991-4cbb-bb2f-246ceac180a7","newsCategory":{"id":"503d28de-b991-4cbb-bb2f-246ceac180a7","name":"علوم وتقنيات","isActive":true},"tags":["شهادة","تقنية","برمجة","شهادات احترافية","معتمدة"],"publishTimeStamp":"2023-10-16T05:59:54+00:00","newsDate":"2023-10-02T00:00:00+00:00","isFixed":false,"isPublished":true},{"id":"e51d326a-b90d-4003-9dc5-eead9347e320","title":"أكاديمية طويق تحتفي بجائزة موسوعة غينيس بالشراكة مع أرامكو","image":"52igbhyr.hlm.png","description":"احتفت أكاديمية طويق بالشراكة مع أرامكو بتحطيم الرقم القياسي العالمي والحصول على جائزة موسوعة غينيس \" أكبر ورشة عمل في مجال الملكية الفكرية ( مواقع متعددة )\"، إذ أقيم البرنامج في كل من الرياض وجدة والظهران على مدى ثلاثة أيام ، ضمن معرض \"Net0thon\" الذي يهدف إلى خفض الانبعاثات الكربونية باستخدام الحلول التقنية الحديثة، للوصول إلى مستهدف المملكة للحياد الصفري للكربون في عام 2060.\n وتناول البرنامج عدة مسارات تعليمية تستهدف تمكين طلاب التعليم العام بالمهارات والقدرات اللازمة في مجالات الابتكار والتقنيات الحديثة، وحلول المدن الذكية، الابتكار في كفاءة الطاقة لخفض الانبعاثات الكربونية، إضافة إلى المسارات التعليمية وورشة عمل في مجال إدارة الملكية الفكرية، بحضور قياسي تجاوز 780 مستفيداُ في مواقع متعددة.\n الجدير بالذكر أن أكاديمية طويق تعمل مع العديد من الجهات الحكومية والخاصة وكبرى الشركات العالمية، لتقديم برامج ومعسكرات احترافية في أبرز مجالات البرمجة والتقنية، بهدف تأهيل الكوادر الوطنية بأبرز المهارات والقدرات اللازمة وسد الفجوة بين تطور التقنيات الحديثة ومتطلبات سوق العمل.\n // انتهى //","newsCategoryId":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","newsCategory":{"id":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","name":"عام","isActive":true},"tags":["تقنية","أرامكو","طويق","غينيس","جائزة"],"publishTimeStamp":"2023-09-20T12:14:43+00:00","newsDate":"2023-09-14T00:00:00+00:00","isFixed":false,"isPublished":true},{"id":"e94132c1-2d98-408b-91bb-7d82ff450355","title":"\"طويق\" تطلق حملة \"خذ العلم\" بمعسكرات وبرامج تلبي احتياجات سوق العمل","image":"4re3gn12.wco.png","description":"أطلقت أكاديمية طويق حملة \"خذ العلم\" والتي تتضمن إعلان بدء التسجيل في أكثر من 50 معسكرًا وبرامج منتهية بالتوظيف للمتميزين، في أبرز المجالات والتخصصات التقنية بالشراكة مع كبرى الجهات العالمية؛ بهدف تمكين المتدربين بالمهارات التقنية اللازمة لوظائف المستقبل، وسد الفجوة بين تطور التقنيات الحديثة ومتطلبات سوق العمل.\n وتسعى الأكاديمية من خلال معسكراتها وبرامجها التدريبية؛ إلى مواكبة احتياجات ومتطلبات سوق العمل, من خلال تمكين الكوادر التقنية بالمعرفة والمهارات اللازمة للعمل في الجهات الحكومية والخاصة بمجالات تطوير تطبيقات الهواتف الذكية، والأمن السيبراني، والذكاء الاصطناعي، والحوسبة السحابية، وتصميم تجربة وواجهات المستخدم، وتقنيات الميتافيرس، والتصميم والتصنيع الرقمي، وتطوير وبرمجة الألعاب، وبرمجة الروبوت والدرونز، وغيرها من المجالات التقنية الواعدة.\n يُذكر أن أكاديمية طويق تستهدف مواكبة نمو الاحتياج للوظائف التقنية في سوق العمل؛ عبر إطلاق معسكرات وبرامج نوعيّة منتهية بالتوظيف للمتميزين، ومتاحة للتسجيل عبر الرابط التالي: https://tuwaiq.edu.sa/bootcamps.\n واختتمت الأكاديمية في شهر أغسطس الماضي برنامج طويق للتوظيف بنسخته الثانية, الذي أسهم في توفير أكثر من 3500 مقابلة وظيفية في أكثر من 600 شاغر وظيفي في 50 جهة من مختلف القطاعات، لتوظيف خرّيجي معسكرات وبرامج طويق من مختلف المجالات والتخصصات التقنية والرقمية.\n وتُعد أكاديمية طويق الأولى من نوعها في تقديم البرامج التعليمية بمجالات التقنيات المتقدمة بالمملكة، حيث تقدم العديد من البرامج التدريبية والمعسكرات التقنية بالشراكة مع كبرى الجهات العالمية مثل شركات Apple, Meta, Amazon, Alibaba، وغيرها من الجهات المتقدمة؛ لتأهيل الكوادر الوطنية بأبرز المهارات والقدرات اللازمة في مجالات التقنيات الحديثة.\n // انتهى //","newsCategoryId":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","newsCategory":{"id":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","name":"عام","isActive":true},"tags":null,"publishTimeStamp":"2023-09-03T13:55:41+00:00","newsDate":"2023-09-03T00:00:00+00:00","isFixed":false,"isPublished":true},{"id":"bbebe3f6-279d-43d9-a7ba-c547c2426dc5","title":"أكثر من 2,500 مقابلة وظيفية لخرّيجي أكاديمية طويق في \"برنامج طويق للتوظيف\"","image":"lretyhor.rbh.png","description":"اختتمت أكاديمية طويق اليوم في الرياض، برنامج طويق للتوظيف بنسخته الثانية، بمشاركة أكثر من 50 جهة حكومية وخاصة وغير ربحية؛بهدف الإسهام في دعم وتوظيف خرّيجي معسكرات وبرامج الأكاديمية من مختلف المجالات والتخصصات التقنية.\n وأتاح برنامج طويق أكثر من 600 فرصة وظيفية عبر الجهات الشريكة في مجالات: البرمجة والتطبيقات، الأمن السيبراني، البيانات والذكاء الاصطناعي، الحوسبة السحابية، التصميم وتطوير الألعاب، الشبكات والدعم الفني، تجربة المستخدم، جودة البرمجيات، إدارة المشاريع وتحليل الأعمال؛بهدف سد الفجوة بين تطور التقنيات الحديثة ومتطلبات سوق العمل،من خلال تطوير المرشحين بالمهارات والقدرات اللازمة عبر معسكرات وبرامج مكثَّفة لمدة 5 أشهر.\n وأبرز الأرقام التي حققتها الأكاديمية في هذه الفعالية،إجراء أكثر من 2,500 مقابلة وظيفية لـ 500 خرّيج وخرّيجة من معسكرات وبرامج الأكاديمية في أكثر من 50 جهة من مختلف القطاعات.\n الجدير بالذكر أن أكاديمية طويق تُعد الأولى من نوعها في تقديم البرامج التعليمية بمجالات التقنيات المتقدمة بالمملكة،إذْ تقدم العديد من البرامج التدريبية والمعسكرات التقنية بالشراكة مع كبرى الجهات العالمية،مثل شركات Apple, Meta, Amazon, Alibaba، وغيرها من الجهات المتقدمة؛لتأهيل الكوادر الوطنية بأبرز المهارات والقدرات اللازمة في مجالات التقنيات الحديثة.","newsCategoryId":"570c6df2-10e4-4439-b551-6e1e0993c7a0","newsCategory":{"id":"570c6df2-10e4-4439-b551-6e1e0993c7a0","name":"تخرج","isActive":true},"tags":null,"publishTimeStamp":"2023-09-03T13:59:59+00:00","newsDate":"2023-08-20T00:00:00+00:00","isFixed":false,"isPublished":true},{"id":"fe04dec9-3e8b-4fbf-98f1-293896873e25","title":"أكاديمية طويق تعلن بدء التسجيل في معسكر طويق بمجالات الأمن السيبراني","image":"pmffdcyd.rdm.jpg","description":"<p><span>أعلنت أكاديمية طويق عن بدء التسجيل في معسكر طويق للأمن السيبراني، بهدف تمكين الطلاب حديثي التخرج وتأهيلهم لسوق العمل في مختلف مجالات الأمن السيبراني بشهادات عالمية معتمدة، حيث سيبدأ المعسكر في يوم الأحد 1 أكتوبر من العام الجاري 2023، ويستمر لمدة 5 أشهر في مقر الأكاديمية بمدينة الرياض.</span><br /><span> ويتكون المعسكر من عدة مسارات تعليمية مكثفة تشمل معرفة أساسيات الأمن السيبراني، والإلمام بالمسارات الدفاعية في مجال الحماية الخاصة بالبنية التحتية الرقمية والاستجابة للحوادث الأمنية، والمسارات الهجومية في مجال اختبار اختراق الأنظمة الحاسوبية؛ بهدف حمايتها وسد الثغرات ومنع التهديدات الأمنية، ويتم تمكين الطلاب حديثي التخرج بالمهارات والقدرات اللازمة في مجال الأمن السيبراني وتطبيقاته من خلال هذه المسارات التعليمية باستخدام أفضل المعايير والممارسات العالمية.</span><br /><span> يُذكر أن أكاديمية طويق تعمل على ضخ المزيد من القدرات والكوادر الوطنية في عدة مجالات تقنية واعدة باستخدام مختلف التقنيات الحديثة، عبر إقامة معسكرات تعليمية مكثفة بالشراكة مع كبرى الشركات العالمية، مثل شركة آبل وميتا وأمازون وعلي بابا وغيرها من الجهات المتقدمة؛ لتمكين المتدربين بالخبرات والقدرات المطلوبة في سوق العمل.</span></p>","newsCategoryId":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","newsCategory":{"id":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","name":"عام","isActive":true},"tags":["عام"],"publishTimeStamp":"2023-07-27T12:55:39+00:00","newsDate":"2023-07-16T00:00:00+00:00","isFixed":false,"isPublished":true},{"id":"549e2c6a-59cb-4089-b342-0c3b7faa86c3","title":"أكاديمية طويق تحتفي بإنجازات 4 سنوات.. 60 شراكة عالمية لتأهيل الكوادر الوطنية في 10 مجالات تقنية ورقمية","image":"otte3ek0.swn.jpg","description":"<p>تحتفي أكاديمية طويق؛ بتحقيقها العديد من المُنجزات القياسية، على صعيد الشراكات العالمية وأعداد المُستفيدين من برامجها الذين تجاوزوا نصف مليون مُستفيد؛ في سبيل بناء وتأهيل الكوادر الوطنية في 10 مجالات رئيسة تتمثل في: (البرمجة، والحوسبة السحابية، والأمن السيبراني، والعوالم الافتراضية، والذكاء الاصطناعي، وعلم البيانات، والتصنيع الرقمي، وتجربة المستخدم، وبرمجة الدرونز، والحوسبة الكمية) وعلى الرغم من العمر القصير لأكاديمية طويق والتي تأسست في شهر أغسطس من عام 2019، وواجهت حينها العديد من التحديات مع دخول جائحة كورونا؛ إلا أنها استطاعت بفضل من الله تطويع التقنية في تقديم الدورات الافتراضية (عن بُعد) لتنطلق بعدها برحلة تحقيق الإنجازات في المعسكرات الحضورية؛ وإبرام أكثر من 60 شراكة عالمية؛ وفي مقدمتها شركة Google، وشركة Microsoft، وشركة IBM، وشركة Apple، وشركة Meta، وشركة Amazon، وشركة Alibaba Cloud.<br />واستفاد من معسكرات وبرامج الأكاديمية الحضورية أكثر من 12,000 مستفيد، وأكثر من 560,000 مستفيد عن بعد، عبر برامج منصة سطر التعليمية، كما تم تخريج أكثر من 9,500 خرّيج وخرّيجة من مختلف الفئات العمرية عبر معسكرات مكثفة في أبرز المجالات التقنية والرقمية، ويرتاد الأكاديمية حضوريًا أكثر من 850 متدربًا ومتدربة يومياً، في أكثر من 500 معسكر تدريبي، ويتم تأهيل المتدربين الملتحقين بالمعسكرات والبرامج بالمهارات والقدرات اللازمة ضمن أكثر من 10 مجالات تدريبية في التقنيات الناشئة، باستخدام أحدث الممارسات العالمية، والتي تقام في طويق والأكاديميات التابعة لها.<br />وتستند الأكاديمية على ركائز ثابتة؛ كالتعليم بلا توقف واستمرار تقديم المعرفة في أي مكان وأي زمان نظرًا للتحول الرقمي في الأساليب المتبعة في مجال التعليم بعد فترة الجائحة، كما تستند الأكاديمية على ركيزة التعليم القائم على التطبيق العملي عبر أحدث الممارسات والتقنيات العالمية، بالإضافة إلى التعليم المبني على احتياجات سوق العمل، وصقل المهارات المطلوبة لضخ المزيد من الكوادر الوطنية والقدرات التقنية في أحدث المجالات والتخصصات، وفق تطور مجالات التقنيات الناشئة ومواكبة أحدث التطورات في تأهيل الكوادر الوطنية لتلبية متطلبات سوق العمل حتى عام 2030.<br />وأسهمت أكاديمية طويق في تطوير وإطلاق برامج تقنية في فترات زمنية قياسية، لمواكبة احتياجات سوق العمل في مجالات البرمجة، والحوسبة السحابية، والأمن السيبراني، والعوالم الافتراضية، والذكاء الاصطناعي، وعلم البيانات، والتصنيع الرقمي، وتجربة المستخدم، وبرمجة الدرونز والروبوت، وتُتيح هذه الأيام التسجيل في معسكرات وبرامج الأكاديمية المتاحة لفترة الصيف عبر موقعها الرسمي:<a title=\"https://tuwaiq.edu.sa\" href=\"https://tuwaiq.edu.sa\">https://tuwaiq.edu.sa</a>.</p>","newsCategoryId":"503d28de-b991-4cbb-bb2f-246ceac180a7","newsCategory":{"id":"503d28de-b991-4cbb-bb2f-246ceac180a7","name":"علوم وتقنيات","isActive":true},"tags":["علوم وتقنيه"],"publishTimeStamp":"2023-06-24T11:34:46+00:00","newsDate":"2023-06-22T21:00:00+00:00","isFixed":false,"isPublished":true},{"id":"ec625e9b-97b7-4367-8eb0-b6345b5f5d74","title":"أكاديمية طويق تُطلق معسكرات ميتافيرس بالشراكة مع Meta بشراكة هي الأولى من نوعها في الشرق الأوسط وشمال أفريقيا","image":"v3rcz3ie.mv4.jpg","description":"<p><a title=\"https://metaverse.tuwaiq.edu.sa\" href=\"https://metaverse.tuwaiq.edu.sa\">https://metaverse.tuwaiq.edu.sa</a>أعلنت أكاديمية طويق عن بدء التسجيل في معسكرات أكاديمية ميتافيرس بالشراكة مع شركة Meta، والتي تمتد لـ 9 أشهر بمقر الأكاديمية بمدينة الرياض، وذلك كأول معسكرات من نوعها بالشرق الأوسط وشمال أفريقيا في مجال الميتافيرس وتقنيات الواقع المعزز والافتراضي.<br />وتتكون معسكرات أكاديمية ميتافيرس من عدد من المسارات التي تهدف إلى التعريف بمفهوم الميتافيرس، وتطوير وتأهيل المختصين لبناء تطبيقات عوالم افتراضية مخصّصة باستخدام تقنيات الواقع المعزز والافتراضي، وتمكين المختصين بأبرز مهارات مجال العوالم الافتراضية المطلوبة في سوق العمل، حيث تم إطلاق الموقع الإلكتروني الخاص بأكاديمية ميتافيرس عبر الرابط التالي: .<br />يذكر أن أكاديمية طويق أطلقت عددًا من الأكاديميات بالشراكة مع كبرى الشركات العالمية مثل أكاديمية مطوري آبل، وأكاديمية أمازون، وأكاديمية علي بابا؛ سعيًا لبناء قدرات وطنية متخصصة في مجالات التقنيات الناشئة تلبي متطلبات سوق العمل.</p>","newsCategoryId":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","newsCategory":{"id":"ed6a8d21-5a71-4497-94b1-5beca5f49bae","name":"عام","isActive":true},"tags":["عام"],"publishTimeStamp":"2023-06-24T12:26:09+00:00","newsDate":"2023-06-18T00:00:00+00:00","isFixed":false,"isPublished":true},{"id":"86860174-5639-4b64-99ea-371accc0997c","title":"أكاديمية طويق تعلن بدء التسجيل في +50 معسكرًا وبرنامجًا لفترة الصيف","image":"iqdw3sib.vly.png","description":"<p>أعلنت أكاديمية طويق عن بدء التسجيل في +50 معسكرًا وبرنامجًا للفترة الصيفية ضمن عدة مجالات تقنية ورقمية بالشراكة مع كبرى الجهات العالمية، تستهدف مختلف الفئات العمرية من الطلاب الجامعيين والخريجين، والموظفين على رأس العمل، وطلاب التعليم العام.<br />وتشمل معسكرات وبرامج الصيف مسارات تعليمية مكثفة في مجالات: الأمن السيبراني، الذكاء الاصطناعي، تقنيات الميتافيرس، الحوسبة السحابية، تطوير تطبيقات الهواتف الذكية، تصميم تجربة وواجهات المستخدم، علم البيانات وتعلم الآلة، تطوير وبرمجة الألعاب، برمجة الروبوت، برمجة الدرونز، التصميم والتصنيع الرقمي، علم المعلومات والحوسبة الكمية، وأتاحت الأكاديمية التسجيل في المعسكرات والبرامج عبر موقعها الرسمي:<a title=\"https://tuwaiq.edu.sa\" href=\"https://tuwaiq.edu.sa\">https://tuwaiq.edu.sa</a>.<br />وفي ضوء ذلك تستمر أكاديمية طويق في العمل على تطوير الكوادر الوطنية بأبرز المهارات التقنية اللازمة، عبر إطلاق معسكرات وبرامج متقدمة بالشراكة مع كبرى الجهات العالمية؛ لتأهيل المتدربين لسوق العمل ومتطلبات التقنيات الحديثة.</p>","newsCategoryId":"5dd808a1-146d-4c3e-9098-3cb732e1a531","newsCategory":{"id":"5dd808a1-146d-4c3e-9098-3cb732e1a531","name":"ثقافي","isActive":true},"tags":["ثقافي"],"publishTimeStamp":"2023-06-24T12:31:02+00:00","newsDate":"2023-06-11T00:00:00+00:00","isFixed":false,"isPublished":true}],
+            newsFixed: [{"id":"6dd0ed96-2446-4d55-a80c-8cba6841c31e","title":"أكاديمية طويق تطلق التسجيل في تحدي \"طويق فلاق يارد\" بمجال الأمن السيبراني","image":"uwz0bmzu.byg.png","description":"أعلنت أكاديمية طويق بدء التسجيل في تحدي طويق فلاق يارد المقرر إقامته يوم السبت 23 أكتوبر الجاري بمدينة الرياض، والذي يُعنى بتشجيع ودعم الكوادر الوطنية على الإبداع والابتكار في مجال الأمن السيبراني، وتعزيز دور الأكاديمية في إقامة مختلف الفعاليات والأنشطة التقنية في مجال الأمن السيبراني ومجالات التقنيات الحديثة.\nويهدف تحدي طويق فلاق يارد إلى دعم الكوادر التقنية باستخدام أبرز التقنيات الحديثة في مجال الأمن السيبراني عبر منصة فلاق يارد، بأكثر من 12 تحديًا في مجال الأمن السيبراني بجوائز تصل إلى 50,000 ريال سعودي مقسمة على النحو التالي: المركز الأول 25,000 ريال، المركز الثاني 15,000 ريال، المركز الثالث 10,000 ريال، كما سيتم تأهيل الفرق المتميزة للمشاركة في تحديات CTF المقامة في فعالية بلاك هات 23 في شهر نوفمبر القادم، كما أتاحت الأكاديمية التسجيل للفرق من خلال موقعها الإلكتروني: Tuwaiq.edu.sa\nيذكر أن أكاديمية طويق تعمل على إقامة العديد من البرامج والأنشطة التقنية لدعم المواهب والقدرات في مختلف المجالات التقنية، كما تقدم الأكاديمية معسكرات وبرامج متخصصة من احتياجات سوق العمل، تقام بالشراكة مع كبرى الجهات العالمية لتطوير وتأهيل الكوادر الوطنية وسد الفجوة بين تطور التقنيات الحديثة ومتطلبات سوق العمل.\n // انتهى //","newsCategoryId":"503d28de-b991-4cbb-bb2f-246ceac180a7","newsCategory":{"id":"503d28de-b991-4cbb-bb2f-246ceac180a7","name":"علوم وتقنيات","isActive":true},"tags":["الأمن السيبراني","تقنية","مسابقة","جوائز","جائزة","تحدي","أمن سيبراني"],"publishTimeStamp":"2023-10-18T14:08:20+00:00","newsDate":"2023-10-17T00:00:00+00:00","isFixed":true,"isPublished":true}],
+            newsLastPage: 2,
+            partners: [{"id":"2173145d-1a5d-4f9f-94dc-6820143ee282","name":"Apple","image":"nv02knjp.jpb.png"},{"id":"278ed54f-3489-4078-9c31-732d71176ea8","name":"test","image":"ph5yueqi.4j0.jpg"},{"id":"32a4a9fa-a5fe-44ed-a117-ba77c811ba11","name":"Alibaba","image":"qi5gdvym.15j.png"},{"id":"42672872-2935-43b5-b48a-3424df249272","name":"PeopleCert","image":"kouekeqw.u0h.png"},{"id":"5e0d82cc-838a-4a1b-b131-3e4e1fd03ba9","name":"Meta","image":"u4v0igxu.b2v.png"},{"id":"9bd40005-1633-4287-a8a8-3745a051edc4","name":"IBM","image":"43beqq4z.35d.png"},{"id":"c9e63c77-f24a-4106-848a-e00891bb0249","name":"Micrososft","image":"gqwex1oh.q1b.png"},{"id":"d60b7319-5ea2-4000-8b9b-b26d4c6e34e3","name":"AWS","image":"z5nifrhl.c4i.png"}],
+        }
+    </script>
+    <script src="js/owl.carousel.min.js" nonce=""></script>
+    <script src="js/flickity.pkgd.min.js" nonce=""></script>
+    <script src="js/home.js" nonce=""></script>
+
+
+</body></html>
